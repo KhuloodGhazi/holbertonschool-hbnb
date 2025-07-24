@@ -1,3 +1,7 @@
+ <img src="https://github.com/user-attachments/assets/5f8d33ce-fed8-438a-935c-a9916afef26e" width="150">
+ 
+ <dive></dive>
+ 
 # HBnB - Part 2: Core Business Logic
 
 ##  Objective
