@@ -3,7 +3,7 @@
  
  <dive></dive>
  
- ## HBnB Evolution - Part 1: Technical Documentation
+ ## Part 1: Technical Documentation
 Welcome to Part 1 of the HBnB Evolution project — a simplified AirBnB-like application designed to teach and demonstrate architectural design, software modeling, and documentation principles.
 
 This part of the project is focused entirely on technical documentation, which will serve as the blueprint for implementation in later phases.
