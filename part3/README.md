@@ -1,8 +1,12 @@
+ <img src="https://github.com/user-attachments/assets/5f8d33ce-fed8-438a-935c-a9916afef26e" width="150">
+ 
+ <dive></dive>
+ 
 # HBnB - Part 3: User Authentication & Database Integration
 
 This phase focuses on making our app secure, reliable, and production-ready by adding user authentication, secure password handling, and connecting it to a real database.
 
----
+
 
 ## About this Project
 
