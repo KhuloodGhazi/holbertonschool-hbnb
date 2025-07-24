@@ -1,42 +1,143 @@
-# Part 1 – Technical Documentation
 
-This folder includes all technical documentation for the first part of the HBnB Evolution project. The focus is on understanding the architecture and business logic of the system before implementation.
+ <img src="https://github.com/user-attachments/assets/5f8d33ce-fed8-438a-935c-a9916afef26e" width="150">
+ 
+ <dive></dive>
+ 
+ ## HBnB Evolution - Part 1: Technical Documentation
+Welcome to Part 1 of the HBnB Evolution project — a simplified AirBnB-like application designed to teach and demonstrate architectural design, software modeling, and documentation principles.
 
-## Included Tasks
+This part of the project is focused entirely on technical documentation, which will serve as the blueprint for implementation in later phases.
+This is a group project and it's part of the holbertonschool x Tuwaiq SWE Bootcamp 
 
-### 0. High-Level Package Diagram
-A diagram showing the three-layer architecture of the application:
-- Presentation Layer
-- Business Logic Layer
-- Persistence Layer
+### Overview
+The HBnB Evolution application is structured around a layered architecture and includes functionality for user management, property (place) listings, reviews, and amenity tracking. This documentation effort includes:
 
-The diagram also highlights how these layers communicate using the Facade Pattern.
+UML diagrams (Package, Class, and Sequence)
 
-> File: `0_High_Level_Package_Diagram.md`
+Architectural and interaction descriptions
 
----
+Design rationale for all components
 
-### 1. Class Diagram for Business Logic Layer
-A detailed class diagram illustrating the core entities of the business logic:
-- User
-- Place
-- Review
-- Amenity
+### Directory Structure
+```
+ holbertonschool-hbnb/
+└── part1/
+    ├── diagrams/
+    │   ├── 0_High_Level_Package_Diagram.md
+    │   ├── 1_Diagram_for_Business_Logic_Layer.md
+    │   └── 2_Diagrams_for_API_Calls.md
+    │ 
+    └── documentation/
+        └── HBnB_Technical_Documentation.pdf
+```
+## Tasks Breakdown
 
-The diagram includes attributes, methods, and relationships between the classes.
+<details>
+<summary><strong>0. High-Level Package Diagram</strong></summary>
 
-> File: `1_Diagram_for_Business_Logic_Layer.md`
+**Objective:**  
+Illustrate the three-layer architecture of the HBnB system using the **Facade Pattern** for inter-layer communication.
 
----
+**Layers:**
+- **Presentation Layer**: API & Services
+- **Business Logic Layer**: Core Models (User, Place, Review, Amenity)
+- **Persistence Layer**: Data storage/retrieval logic (e.g., repositories/DAOs)
 
-### 2. Sequence Diagrams for API Calls
-Four diagrams representing the flow of interactions between layers for each API call:
-- User Registration
-- Place Creation
-- Review Submission
-- Fetching a List of Places
+**Deliverables:**
+- UML Package Diagram (Mermaid.js or draw.io)
+- Explanatory notes on architecture and design patterns
 
-> File: `2_Diagrams_for_API_Calls.md`
+</details>
 
----
 
+<details>
+<summary><strong>1. Detailed Class Diagram for Business Logic Layer</strong></summary>
+
+**Objective:**  
+Design and document all entities in the business logic layer, showing attributes, methods, and relationships.
+
+**Entities Modeled:**
+- `User`
+- `Place`
+- `Review`
+- `Amenity`
+
+**Requirements:**
+- Use UUIDs for unique identification
+- Include `created_at` and `updated_at` timestamps
+- Show associations (e.g., Place ↔ Amenities)
+
+**Deliverables:**
+- UML Class Diagram
+- Description of each class, relationships, and logic
+
+</details>
+
+
+<details>
+<summary><strong>2. Sequence Diagrams for API Calls</strong></summary>
+
+**Objective:**  
+Demonstrate the flow of data and logic for major API operations.
+
+**API Calls Modeled:**
+1. User Registration  
+2. Place Creation  
+3. Review Submission  
+4. Fetch List of Places
+
+**Deliverables:**
+- 4 UML Sequence Diagrams
+- Step-by-step explanation of each interaction
+
+**Focus Areas:**
+- Request flow from Presentation → Business Logic → Persistence
+- Use of method calls, validations, and DB access
+
+</details>
+
+<details>
+<summary><strong>3. Documentation Compilation</strong></summary>
+
+**Objective:**  
+Assemble all diagrams and notes into a **comprehensive technical document** that defines the system architecture.
+
+**Includes:**
+- Introduction and project overview
+- High-Level Architecture section
+- Detailed Class Design section
+- API Interaction Flow section
+
+**Format:**  
+`HBnB_Technical_Documentation.pdf`  
+Stored in `/documentation/`
+
+</details>
+
+
+### Format:
+HBnB_Technical_Documentation.pdf
+Stored in /documentation/
+
+###  Resources Used
+UML Class Diagram Tutorial
+
+Mermaid.js Documentation
+
+UML Sequence Diagram Guide
+
+Facade Pattern Reference
+
+ ### Notes
+All diagrams are written in UML using standardized notation.
+
+Focus has been placed on clarity, modularity, and documentation quality.
+
+This documentation will directly influence the implementation phase in Part 2 and 3.
+
+### Repository Info
+Repository: holbertonschool-hbnb
+
+Directory for this part: /part1
+
+Status: ✅ 100% Documentation Complete
