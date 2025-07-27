@@ -2,7 +2,9 @@ from flask_restx import Namespace, Resource, fields
 from flask_jwt_extended import create_access_token
 from app.services import facade
 
+
 api = Namespace('auth', description='Authentication operations')
+
 
 login_model = api.model('Login', {
     'email': fields.String(required=True, description='User email'),
@@ -39,7 +41,5 @@ class Login(Resource):
                 'message': 'Internal Server Error',
                 'error': str(e)
             }, 500
-
-# Export namespaces
-auth_users_ns = users_api
-auth_admin_ns = admin_ns
+        
+auth_ns = api
